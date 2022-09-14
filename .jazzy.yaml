@@ -1,4 +1,4 @@
-podspec: AgoraUIKit_iOS.podspec
+podspec: AgoraUIKit_macOS.podspec
 exclude:
   - Sources/Agora-Video-UIKit/iOS+macOS+typealiases.swift
   - Sources/Agora-Video-UIKit/AgoraUIKit+MD5.swift

@@ -4,8 +4,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "AgoraUIKit_iOS",
-    platforms: [.iOS(.v13)],
+    name: "AgoraUIKit_macOS",
+    platforms: [.macOS(.v10_15)],
     products: [
         .library(name: "AgoraUIKit", targets: ["AgoraUIKit", "AgoraRtmControl"]),
         .library(name: "AgoraRtmControl", targets: ["AgoraRtmControl"])
@@ -13,12 +13,12 @@ let package = Package(
     dependencies: [
         .package(
             name: "AgoraRtcKit",
-            url: "https://github.com/AgoraIO/AgoraRtcEngine_iOS",
+            url: "https://github.com/AgoraIO/AgoraRtcEngine_macOS",
             revision: "4.0.0-r.4"
         ),
         .package(
             name: "AgoraRtmKit",
-            url: "https://github.com/AgoraIO/AgoraRtm_iOS",
+            url: "https://github.com/AgoraIO/AgoraRtm_macOS",
             .upToNextMinor(from: Version(1, 5, 1))
         )
     ],
