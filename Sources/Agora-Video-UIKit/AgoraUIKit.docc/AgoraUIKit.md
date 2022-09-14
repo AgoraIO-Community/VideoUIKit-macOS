@@ -1,6 +1,6 @@
 # ``AgoraUIKit``
 
-Integrate Agora Video Calling or Live Video Streaming to your iOS or macOS app with just a few lines of code.
+Integrate Agora Video Calling or Live Video Streaming to your macOS app with just a few lines of code.
 
 ## Overview
 

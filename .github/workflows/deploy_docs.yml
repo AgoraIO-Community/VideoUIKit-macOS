@@ -15,11 +15,11 @@ jobs:
       - name: Build DocC 🛠
         run: |
           sudo xcode-select -s /Applications/Xcode_14.0.app;
-          xcodebuild docbuild -scheme AgoraUIKit -derivedDataPath /tmp/docbuild -destination 'generic/platform=iOS';
+          xcodebuild docbuild -scheme AgoraUIKit -derivedDataPath /tmp/docbuild -destination 'platform=macOS';
           $(xcrun --find docc) process-archive \
-            transform-for-static-hosting /tmp/docbuild/Build/Products/Debug-iphoneos/AgoraUIKit.doccarchive \
+            transform-for-static-hosting /tmp/docbuild/Build/Products/Debug/AgoraUIKit.doccarchive \
             --output-path docs \
-            --hosting-base-path VideoUIKit-iOS;
+            --hosting-base-path VideoUIKit-macOS;
       - name: Deploy to GitHub Pages 🐙
         uses: JamesIves/github-pages-deploy-action@v4
         with:

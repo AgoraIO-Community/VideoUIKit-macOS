@@ -19,7 +19,7 @@ jobs:
     - name: Test Build 🔨
       run: xcodebuild -scheme $SCHEME -destination $DESTINATION
       env:
-        SCHEME: AgoraUIKit_iOS-Package
-        DESTINATION: 'generic/platform=iOS'
+        SCHEME: AgoraUIKit_macOS-Package
+        DESTINATION: 'platform=macOS'
     - name: Pod Lint 🔎
-      run: pod lib lint AgoraUIKit_iOS.podspec --allow-warnings --skip-import-validation --include-podspecs='AgoraRtmControl_iOS.podspec'
+      run: pod lib lint AgoraUIKit_macOS.podspec --allow-warnings --skip-import-validation --include-podspecs='AgoraRtmControl_macOS.podspec'

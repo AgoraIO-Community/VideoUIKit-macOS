@@ -1,4 +1,4 @@
-# Agora UIKit for iOS
+# Agora UIKit for macOS
 
 <p align="center">
     <img src="https://github.com/AgoraIO-Community/VideoUIKit-macOS/actions/workflows/swift-build-lint.yml/badge.svg"/>
@@ -25,7 +25,7 @@ Instantly integrate Agora in your own application or prototype using macOS. For 
 
 ## Requirements
 
-- iOS 13.0+ or a macOS 10.15 or later
+- macOS 10.15 or later
 - Xcode 12.3 or later
 - CocoaPods (if installing with CocoaPods)
 - [An Agora developer account](https://www.agora.io/en/blog/how-to-get-started-with-agora?utm_source=github&utm_repo=agora-ios-uikit)
@@ -65,7 +65,7 @@ Frame your newly created AgoraVideoViewer in the app scene, then join a channel 
 agoraView.join(channel: "test", as: .broadcaster)
 ```
 
-[More examples available on the wiki](https://github.com/AgoraIO-Community/VideoUIKit-iOS/wiki/Examples)
+[More examples available on the wiki](https://github.com/AgoraIO-Community/VideoUIKit-macOS/wiki/Examples)
 
 ## Documentation
 
