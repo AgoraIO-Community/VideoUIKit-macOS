@@ -10,11 +10,11 @@ This page outlines the minimum code you need to integrate high-quality, low-late
 
 ### Installation
 
-Installation is made incredibly easy with Swift Package Manager. [Swift Package Index](https://swiftpackageindex.com/AgoraIO-Community/VideoUIKit-iOS) is a great resource to find out how it all works.
+Installation is made incredibly easy with Swift Package Manager. [Swift Package Index](https://swiftpackageindex.com/AgoraIO-Community/VideoUIKit-macOS) is a great resource to find out how it all works.
 
 > Make sure you select at least the package product `AgoraUIKit` when prompted by Xcode.
 
-CocoaPods installation is also available, with the pod name `'AgoraUIKit_iOS'`
+CocoaPods installation is also available, with the pod name `'AgoraUIKit_macOS'`
 
 ### Creating an Agora Video Viewer
 
@@ -30,7 +30,7 @@ let agoraView = AgoraVideoViewer(
 )
 ```
 
-Treat ``AgoraVideoViewer`` as you would any UIView. It can use constraints, or just be positioned in the same way any other view in your app.
+Treat ``AgoraVideoViewer`` as you would any NSView. It can use constraints, or just be positioned in the same way any other view in your app.
 
 ### Joining Channels
 
