@@ -1,4 +1,4 @@
-<!-- Please refer to our contributing documentation for any questions on submitting a pull request, or let us know here if you need any help: https://github.com/AgoraIO-Community/iOS-UIKit/blob/main/CONTRIBUTING.md -->
+<!-- Please refer to our contributing documentation for any questions on submitting a pull request, or let us know here if you need any help: https://github.com/AgoraIO-Community/VideoUIKit-macOS/blob/main/CONTRIBUTING.md -->
 
 > Release Version:
 
@@ -56,7 +56,7 @@ Issue Number: N/A
 
 ### UIKit Update Checklist (Minor or Patch Release)
 
-- [ ] Updated version number in `*.podspec` files and `Sources/Agora-UIKit/AgoraUIKit.swift`
+- [ ] Updated version number in `*.podspec` files and `Sources/Agora-Video-UIKit/AgoraUIKit.swift`
 - [ ] Using the latest version of Agora's Video SDK
 - [ ] Example apps are all functional
 - [ ] Core features are still working (both ways across platforms)

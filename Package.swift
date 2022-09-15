@@ -1,4 +1,4 @@
-// swift-tools-version:5.4
+// swift-tools-version:5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -7,26 +7,26 @@ let package = Package(
     name: "AgoraUIKit_macOS",
     platforms: [.macOS(.v10_15)],
     products: [
-        .library(name: "AgoraUIKit", targets: ["AgoraUIKit"]),
+        .library(name: "AgoraUIKit", targets: ["AgoraUIKit", "AgoraRtmControl"]),
         .library(name: "AgoraRtmControl", targets: ["AgoraRtmControl"])
     ],
     dependencies: [
         .package(
             name: "AgoraRtcKit",
             url: "https://github.com/AgoraIO/AgoraRtcEngine_macOS",
-            .upToNextMinor(from: Version(3, 7, 0))
+            revision: "4.0.0-r.4"
         ),
         .package(
             name: "AgoraRtmKit",
             url: "https://github.com/AgoraIO/AgoraRtm_macOS",
-            .upToNextMinor(from: Version(1, 4, 10))
+            .upToNextMinor(from: Version(1, 5, 1))
         )
     ],
     targets: [
         .target(
             name: "AgoraUIKit",
-            dependencies: [.product(name: "RtcBasic", package: "AgoraRtcKit")],
-            path: "Sources/Agora-UIKit"
+            dependencies: [.product(name: "RtcBasic", package: "AgoraRtcKit"), "AgoraRtmControl"],
+            path: "Sources/Agora-Video-UIKit"
         ),
         .target(
             name: "AgoraRtmControl",

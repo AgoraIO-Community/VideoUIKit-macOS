@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D4F395C0D0C3B90C8110116F /* Pods_Agora_AppKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C637023FD1AFAD8A340A803B /* Pods_Agora_AppKit_Example.framework */; };
+		F34AEEA428D20E4F009ECFFD /* AgoraUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = F34AEEA328D20E4F009ECFFD /* AgoraUIKit */; };
 		F3AFC27A257511C20049D712 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AFC279257511C20049D712 /* AppDelegate.swift */; };
 		F3AFC27C257511C20049D712 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AFC27B257511C20049D712 /* ViewController.swift */; };
 		F3AFC27E257511C40049D712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3AFC27D257511C40049D712 /* Assets.xcassets */; };
@@ -15,9 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		620F79B00A72679B29C40E01 /* Pods-Agora-AppKit-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agora-AppKit-Example.debug.xcconfig"; path = "Target Support Files/Pods-Agora-AppKit-Example/Pods-Agora-AppKit-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		93DB5D921FCA4D764A8F1338 /* Pods-Agora-AppKit-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agora-AppKit-Example.release.xcconfig"; path = "Target Support Files/Pods-Agora-AppKit-Example/Pods-Agora-AppKit-Example.release.xcconfig"; sourceTree = "<group>"; };
-		C637023FD1AFAD8A340A803B /* Pods_Agora_AppKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agora_AppKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34AEEA128D20DE5009ECFFD /* macOS-UIKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "macOS-UIKit"; path = ..; sourceTree = "<group>"; };
 		F3AFC276257511C20049D712 /* Agora-AppKit-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agora-AppKit-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3AFC279257511C20049D712 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3AFC27B257511C20049D712 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,37 +30,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4F395C0D0C3B90C8110116F /* Pods_Agora_AppKit_Example.framework in Frameworks */,
+				F34AEEA428D20E4F009ECFFD /* AgoraUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F12E9314EC45B172FAE0CB9 /* Frameworks */ = {
+		F34AEEA028D20DE5009ECFFD /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				C637023FD1AFAD8A340A803B /* Pods_Agora_AppKit_Example.framework */,
+				F34AEEA128D20DE5009ECFFD /* macOS-UIKit */,
 			);
-			name = Frameworks;
+			name = Packages;
 			sourceTree = "<group>";
 		};
-		6757440DBDE019CD74033B5B /* Pods */ = {
+		F34AEEA228D20E4F009ECFFD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				620F79B00A72679B29C40E01 /* Pods-Agora-AppKit-Example.debug.xcconfig */,
-				93DB5D921FCA4D764A8F1338 /* Pods-Agora-AppKit-Example.release.xcconfig */,
 			);
-			path = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F3AFC26D257511C20049D712 = {
 			isa = PBXGroup;
 			children = (
+				F34AEEA028D20DE5009ECFFD /* Packages */,
 				F3AFC278257511C20049D712 /* Agora-AppKit-Example */,
 				F3AFC277257511C20049D712 /* Products */,
-				6757440DBDE019CD74033B5B /* Pods */,
-				1F12E9314EC45B172FAE0CB9 /* Frameworks */,
+				F34AEEA228D20E4F009ECFFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,17 +90,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3AFC286257511C40049D712 /* Build configuration list for PBXNativeTarget "Agora-AppKit-Example" */;
 			buildPhases = (
-				B34D0F5F9FA5A66670EA7C24 /* [CP] Check Pods Manifest.lock */,
 				F3AFC272257511C20049D712 /* Sources */,
 				F3AFC273257511C20049D712 /* Frameworks */,
 				F3AFC274257511C20049D712 /* Resources */,
-				995C6F40625C85A9437F5AB7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Agora-AppKit-Example";
+			packageProductDependencies = (
+				F34AEEA328D20E4F009ECFFD /* AgoraUIKit */,
+			);
 			productName = "Agora-AppKit-Example";
 			productReference = F3AFC276257511C20049D712 /* Agora-AppKit-Example.app */;
 			productType = "com.apple.product-type.application";
@@ -152,48 +149,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		995C6F40625C85A9437F5AB7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Agora-AppKit-Example/Pods-Agora-AppKit-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Agora-AppKit-Example/Pods-Agora-AppKit-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Agora-AppKit-Example/Pods-Agora-AppKit-Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B34D0F5F9FA5A66670EA7C24 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Agora-AppKit-Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3AFC272257511C20049D712 /* Sources */ = {
@@ -336,7 +291,6 @@
 		};
 		F3AFC287257511C40049D712 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 620F79B00A72679B29C40E01 /* Pods-Agora-AppKit-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -358,7 +312,6 @@
 		};
 		F3AFC288257511C40049D712 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93DB5D921FCA4D764A8F1338 /* Pods-Agora-AppKit-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -400,6 +353,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F34AEEA328D20E4F009ECFFD /* AgoraUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AgoraUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F3AFC26E257511C20049D712 /* Project object */;
 }
