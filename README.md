@@ -19,7 +19,7 @@ Instantly integrate Agora in your own application or prototype using macOS. For 
   <img src="https://github.com/AgoraIO-Community/VideoUIKit-macOS/raw/main/media/agora-uikit-banner.png"/>
 </p>
 
-[More information available on this repo's Wiki](https://github.com/AgoraIO-Community/VideoUIKit-macOS/wiki)
+[More information available on this repo's Wiki](https://github.com/AgoraIO-Community/VideoUIKit-iOS/wiki)
 
 [Click here for full documentation](https://agoraio-community.github.io/VideoUIKit-macOS/documentation/agorauikit/)
 
@@ -38,7 +38,7 @@ Swift Package Manager and CocoaPods are both available offered for installation 
 
 The Pod for this package is called `AgoraUIKit_iOS` and `AgoraUIKit_macOS` for the two available platforms.
 
-See the [Installation wiki](https://github.com/AgoraIO-Community/VideoUIKit-macOS/wiki/Installation) page for more information on installing the package.
+See the [Installation wiki](https://github.com/AgoraIO-Community/VideoUIKit-iOS/wiki/Installation) page for more information on installing the package.
 
 ## Usage
 
@@ -65,7 +65,7 @@ Frame your newly created AgoraVideoViewer in the app scene, then join a channel 
 agoraView.join(channel: "test", as: .broadcaster)
 ```
 
-[More examples available on the wiki](https://github.com/AgoraIO-Community/VideoUIKit-macOS/wiki/Examples)
+[More examples available on the wiki](https://github.com/AgoraIO-Community/VideoUIKit-iOS/wiki/Examples)
 
 ## Documentation
 
@@ -73,7 +73,7 @@ For full documentation, see our [AgoraUIKit documentation page](https://agoraio-
 
 ## Error Handling and Troubleshooting
 
-For tips on how to overcome some common errors, [see the wiki page](https://github.com/AgoraIO-Community/VideoUIKit-macOS/wiki/Error-Handling-and-Troubleshooting).
+For tips on how to overcome some common errors, [see the wiki page](https://github.com/AgoraIO-Community/VideoUIKit-iOS/wiki/Error-Handling-and-Troubleshooting).
 
 ## Roadmap
 
@@ -83,9 +83,9 @@ For tips on how to overcome some common errors, [see the wiki page](https://gith
 - [ ] Layout for Voice Calls
 - [ ] Cloud recording
 
-## UIKits
+## Other Video UI Kits
 
-The plan is to grow this library and have similar offerings across all supported platforms. There are already similar libraries for [Android](https://github.com/AgoraIO-Community/VideoUIKit-Android), [React Native](https://github.com/AgoraIO-Community/VideoUIKit-ReactNative), [Flutter](https://github.com/AgoraIO-Community/VideoUIKit-Flutter) and [Web React](https://github.com/AgoraIO-Community/VideoUIKit-Web-React) so be sure to check them out.
+The plan is to grow this library and have similar offerings across all supported platforms. There are already similar libraries for [iOS](https://github.com/AgoraIO-Community/VideoUIKit-iOS), [Android](https://github.com/AgoraIO-Community/VideoUIKit-Android), [React Native](https://github.com/AgoraIO-Community/VideoUIKit-ReactNative), [Flutter](https://github.com/AgoraIO-Community/VideoUIKit-Flutter) and [Web React](https://github.com/AgoraIO-Community/VideoUIKit-Web-React) so be sure to check them out.
 
 ## UML Diagrams
 
