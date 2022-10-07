@@ -1,4 +1,4 @@
-# Agora UIKit for macOS
+# Agora Video UI Kit for macOS
 
 <p align="center">
     <img src="https://github.com/AgoraIO-Community/VideoUIKit-macOS/actions/workflows/swift-build-lint.yml/badge.svg"/>
@@ -36,7 +36,7 @@ Once you have an Agora developer account and an App ID, you're ready to use this
 
 Swift Package Manager and CocoaPods are both available offered for installation methods.
 
-The Pod for this package is called `AgoraUIKit_iOS` and `AgoraUIKit_macOS` for the two available platforms.
+The Pod for this package is called `AgoraUIKit_macOS`.
 
 See the [Installation wiki](https://github.com/AgoraIO-Community/VideoUIKit-iOS/wiki/Installation) page for more information on installing the package.
 
