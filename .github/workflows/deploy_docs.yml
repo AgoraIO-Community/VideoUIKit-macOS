@@ -41,20 +41,13 @@ jobs:
             --hosting-base-path VideoUIKit-macOS/extensions/AgoraRtmControl;
           echo "<script>window.location.href += \"documentation/agorartmcontrol\"</script>" > docs/extensions/AgoraRtmControl/index.html;
 
-          xcodebuild docbuild -scheme AgoraBroadcastExtensionHelper -derivedDataPath /tmp/docbuild -destination 'platform=macOS';
-          mkdir -pv docs/extensions/AgoraBroadcastExtensionHelper
-          $(xcrun --find docc) process-archive \
-            transform-for-static-hosting /tmp/docbuild/Build/Products/Debug/AgoraBroadcastExtensionHelper.doccarchive \
-            --output-path docs/extensions/AgoraBroadcastExtensionHelper \
-            --hosting-base-path VideoUIKit-macOS/extensions/AgoraBroadcastExtensionHelper;
-          echo "<script>window.location.href += \"documentation/agorabroadcastextensionhelper\"</script>" > docs/extensions/AgoraBroadcastExtensionHelper/index.html;
-
+          xcodebuild docbuild -scheme AgoraAppGroupDataHelper -derivedDataPath /tmp/docbuild -destination 'platform=macOS';
           mkdir -pv docs/extensions/AgoraAppGroupDataHelper
           $(xcrun --find docc) process-archive \
             transform-for-static-hosting /tmp/docbuild/Build/Products/Debug/AgoraAppGroupDataHelper.doccarchive \
             --output-path docs/extensions/AgoraAppGroupDataHelper \
             --hosting-base-path VideoUIKit-macOS/extensions/AgoraAppGroupDataHelper;
-          echo "<script>window.location.href += \"documentation/agoraappgroupdatahelper\"</script>" > docs/extensions/AgoraAppGroupDataHelper/index.html;
+          echo "<script>window.location.href += \"documentation/AgoraAppGroupDataHelper\"</script>" > docs/extensions/AgoraAppGroupDataHelper/index.html;
 
       - name: Upload artifact 📜
         uses: actions/upload-pages-artifact@v1
