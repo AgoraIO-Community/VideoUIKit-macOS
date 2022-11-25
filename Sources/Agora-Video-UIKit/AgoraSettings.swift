@@ -9,6 +9,7 @@ import AgoraRtcKit
 #if canImport(AgoraRtmControl)
 import AgoraRtmKit
 #endif
+import AVKit
 
 /// Settings used for the display and behaviour of AgoraVideoViewer
 public struct AgoraSettings {
@@ -41,12 +42,14 @@ public struct AgoraSettings {
         public static let micButton = BuiltinButtons(rawValue: 1 << 1)
         /// Option for displaying a button to flip the camera between front and rear facing.
         public static let flipButton = BuiltinButtons(rawValue: 1 << 2)
-        /// Option for displaying a button to toggle beautify feature on or off
+        /// Option for displaying a button to toggle beautify feature on or off.
+        /// This button will be hidden by default, as extra libraries are required.
         public static let beautifyButton = BuiltinButtons(rawValue: 1 << 3)
-        /// Option for displaying screenshare button
+        /// Option for displaying screenshare button. This button is available for macOS only.
+        /// iOS screen sharing must be implemented using `RPSystemBroadcastPickerView`.
         public static let screenShareButton = BuiltinButtons(rawValue: 1 << 4)
         /// Option to display all default buttons
-        public static let all: BuiltinButtons = [cameraButton, micButton, flipButton, beautifyButton, screenShareButton]
+        public static let all: BuiltinButtons = [cameraButton, micButton, flipButton, screenShareButton]
         /// Initialiser for creating an option set
         /// - Parameter rawValue: Raw value to be applied, used for choosing the button options
         public init(rawValue: Int) {
@@ -99,15 +102,23 @@ public struct AgoraSettings {
         /// - `false`: The external video source is not encoded.
         public let encoded: Bool
 
+        /// Class for the logic around using a custom camera.
+        public var captureDevice: AVCaptureDevice?
+
         /// Create a settings object for applying external videos
         /// - Parameters:
         ///   - enabled: Determines whether to enable the external video source.
         ///   - texture: Determines whether to use textured video data.
         ///   - encoded: Determines whether the external video source is encoded.
-        public init(enabled: Bool, texture: Bool, encoded: Bool) {
+        ///   - customCamera: Class for the logic around using a custom camera.
+        public init(
+            enabled: Bool, texture: Bool, encoded: Bool,
+            captureDevice: AVCaptureDevice? = nil
+        ) {
             self.enabled = enabled
             self.texture = texture
             self.encoded = encoded
+            self.captureDevice = captureDevice
         }
     }
 
