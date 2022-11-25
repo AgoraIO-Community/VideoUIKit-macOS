@@ -25,7 +25,6 @@ Instantly integrate Agora in your own application or prototype using macOS. For 
 
 To see full documentation for other packages in this repo, such as `AgoraBroadcastExtensionHelper`, `AgoraAppGroupDataHelper` or `AgoraRtmControl`, check them out here:
 
-- [AgoraBroadcastExtensionHelper](https://agoraio-community.github.io/VideoUIKit-iOS/extensions/AgoraBroadcastExtensionHelper/)
 - [AgoraAppGroupDataHelper](https://agoraio-community.github.io/VideoUIKit-iOS/extensions/AgoraAppGroupDataHelper/)
 - [AgoraRtmControl](https://agoraio-community.github.io/VideoUIKit-iOS/extensions/AgoraRtmControl/)
 
@@ -92,6 +91,10 @@ For other libraries in this package:
 ## Error Handling and Troubleshooting
 
 For tips on how to overcome some common errors, [see the wiki page](https://github.com/AgoraIO-Community/VideoUIKit-iOS/wiki/Error-Handling-and-Troubleshooting).
+
+## Known Issues
+
+Icons may not display if SF Symbols is not installed.
 
 ## Roadmap
 
