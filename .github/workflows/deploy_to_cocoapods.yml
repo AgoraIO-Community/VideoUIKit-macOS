@@ -26,4 +26,5 @@ jobs:
           exit 1
         fi
         pod trunk push AgoraRtmControl_macOS.podspec --allow-warnings --skip-import-validation;
+        pod trunk push AgoraAppGroupDataHelper_macOS.podspec --allow-warnings --skip-import-validation;
         pod trunk push AgoraUIKit_macOS.podspec --allow-warnings --skip-import-validation --synchronous;
