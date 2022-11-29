@@ -16,10 +16,10 @@ Pod::Spec.new do |s|
 Use this Pod to interact with app extensions, such as a broadcast extension for sharing screens.
                        DESC
 
-  s.homepage         = 'https://github.com/AgoraIO-Community/VideoUIKit-iOS'
+  s.homepage         = 'https://github.com/AgoraIO-Community/VideoUIKit-macOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Max Cobb' => 'max@agora.io' }
-  s.source           = { :git => 'https://github.com/AgoraIO-Community/VideoUIKit-iOS.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/AgoraIO-Community/VideoUIKit-macOS.git', :tag => s.version.to_s }
 
   s.macos.deployment_target = '10.15'
   s.swift_versions = ['5.0']
