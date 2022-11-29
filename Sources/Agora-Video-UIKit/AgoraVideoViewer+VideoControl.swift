@@ -174,9 +174,9 @@ extension AgoraVideoViewer {
     #if os(macOS)
     /// Start a new screen capture (macOS only for now)
     /// - Parameter displayId: The display ID of the screen to be shared. This parameter specifies which screen you want to share.
-    /// - Parameter contentHint: The content hint for screen sharing, see [AgoraVideoContentHint](https://docs.agora.io/en/Interactive%20Broadcast/API%20Reference/oc/Constants/AgoraVideoContentHint.html?platform=macOS).
     ///
-    /// <br>For information on how to get the displayId, see [Share the Screen](https://docs.agora.io/en/Video/screensharing_mac?platform=macOS)
+    ///  To search for your desired screen, or list them, use [AgoraRtcEngineKit.getScreenCaptureSources](https://api-ref.agora.io/en/voice-sdk/macos/4.x/API/class_irtcengine.html#api_irtcengine_getscreencapturesources).
+    /// <br>For information on how to get the displayId, see [Share the Screen](https://docs.agora.io/en/video-calling/develop/product-workflow?platform=macos)
     @objc open func startSharingScreen(displayId: UInt = 0) {
         let parameters = AgoraScreenCaptureParameters()
         parameters.dimensions = CGSize(width: 640, height: 480)
@@ -192,7 +192,7 @@ extension AgoraVideoViewer {
         self.agkit.updateChannel(with: mediaOptions)
     }
 
-    func stopSharingScreen() {
+    @objc open func stopSharingScreen() {
         self.agkit.stopScreenCapture()
         let mediaOptions = AgoraRtcChannelMediaOptions()
         mediaOptions.publishCameraTrack = true
