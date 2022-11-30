@@ -1,15 +1,22 @@
 # Agora Video UI Kit for macOS
 
 <p align="center">
+    <a href="https://github.com/AgoraIO-Community/VideoUIKit-macOS/releases">
+        <img src="https://img.shields.io/github/v/release/AgoraIO-Community/VideoUIKit-macOS?color=orange&label=Stable%20Release&logo=swift"/>
+    </a>
+    <a href="https://swiftpackageindex.com/AgoraIO-Community/VideoUIKit-macOS">
+        <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FAgoraIO-Community%2FVideoUIKit-macOS%2Fbadge%3Ftype%3Dplatforms"/>
+    </a>
+    <a href="https://swiftpackageindex.com/AgoraIO-Community/VideoUIKit-macOS">
+        <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FAgoraIO-Community%2FVideoUIKit-macOS%2Fbadge%3Ftype%3Dswift-versions"/>
+    </a>
+    <br/>
     <img src="https://github.com/AgoraIO-Community/VideoUIKit-macOS/actions/workflows/swift-build-lint.yml/badge.svg"/>
     <a href="https://agoraio-community.github.io/VideoUIKit-macOS/documentation/agorauikit">
         <img src="https://github.com/AgoraIO-Community/VideoUIKit-macOS/actions/workflows/deploy_docs.yml/badge.svg"/>
     </a>
-    <img src="https://img.shields.io/badge/platform-macOS-lightgrey"/>
-    <img src="https://img.shields.io/github/v/release/AgoraIO-Community/VideoUIKit-macOS?color=orange&label=Stable%20Release&logo=swift"/>
-    <img src="https://img.shields.io/cocoapods/v/AgoraUIKit_macOS?label=Pre-release"/>
     <a href="https://www.agora.io/en/join-slack/">
-        <img src="https://img.shields.io/badge/slack-@RTE%20Dev-blue.svg?logo=slack">
+        <img src="https://img.shields.io/badge/slack-@RTE%20Dev-blue?logo=slack">
     </a>
 </p>
 
@@ -25,8 +32,8 @@ Instantly integrate Agora in your own application or prototype using macOS. For 
 
 To see full documentation for other packages in this repo, such as `AgoraBroadcastExtensionHelper`, `AgoraAppGroupDataHelper` or `AgoraRtmControl`, check them out here:
 
-- [AgoraAppGroupDataHelper](https://agoraio-community.github.io/VideoUIKit-iOS/extensions/AgoraAppGroupDataHelper/)
-- [AgoraRtmControl](https://agoraio-community.github.io/VideoUIKit-iOS/extensions/AgoraRtmControl/)
+- [AgoraAppGroupDataHelper](https://agoraio-community.github.io/VideoUIKit-macOS/extensions/AgoraAppGroupDataHelper/)
+- [AgoraRtmControl](https://agoraio-community.github.io/VideoUIKit-macOS/extensions/AgoraRtmControl/)
 
 ## Requirements
 
@@ -72,20 +79,13 @@ agoraView.join(channel: "test", as: .broadcaster)
 
 [More examples available on the wiki](https://github.com/AgoraIO-Community/VideoUIKit-iOS/wiki/Examples)
 
-### Screen Sharing
-
-For an example for screen sharing with Agora Video UI Kit and [AgoraBroadcastExtensionHelper Quickstart](https://agoraio-community.github.io/VideoUIKit-iOS/extensions/AgoraBroadcastExtensionHelper/documentation/agorabroadcastextensionhelper/quickstart), check out the example project here:
-
-https://github.com/AgoraIO-Community/Video-UI-Kit-ScreenShare
-
 ## Documentation
 
 For full documentation, see our [AgoraUIKit documentation page](https://agoraio-community.github.io/VideoUIKit-macOS/documentation/agorauikit/).
 
 For other libraries in this package:
-- [AgoraBroadcastExtensionHelper](https://agoraio-community.github.io/VideoUIKit-iOS/extensions/AgoraBroadcastExtensionHelper/)
-- [AgoraAppGroupDataHelper](https://agoraio-community.github.io/VideoUIKit-iOS/extensions/AgoraAppGroupDataHelper/)
-- [AgoraRtmControl](https://agoraio-community.github.io/VideoUIKit-iOS/extensions/AgoraRtmControl/)
+- [AgoraAppGroupDataHelper](https://agoraio-community.github.io/VideoUIKit-macOS/extensions/AgoraAppGroupDataHelper/)
+- [AgoraRtmControl](https://agoraio-community.github.io/VideoUIKit-macOS/extensions/AgoraRtmControl/)
 
 
 ## Error Handling and Troubleshooting
