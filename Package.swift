@@ -15,7 +15,7 @@ let package = Package(
         .package(
             name: "AgoraRtcKit",
             url: "https://github.com/AgoraIO/AgoraRtcEngine_macOS",
-            .upToNextMinor(from: Version(4, 0, 1))
+            .upToNextMinor(from: Version(4, 1, 0))
         ),
         .package(
             name: "AgoraRtmKit",
