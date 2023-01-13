@@ -74,7 +74,7 @@ final class RtmMessagesTests: XCTestCase {
             XCTAssertEqual((agoraData["rtm"] as? String), AgoraRtmKit.getSDKVersion(), "mute invalid!")
         } else { XCTFail("Could not parse agora version data") }
         let msgTextValid = "{\"uikit\":{"
-                        + "\"platform\":\"ios\",\"version\":\"\(AgoraUIKit.version)\",\"framework\":\"native\"},"
+                        + "\"platform\":\"macos\",\"version\":\"\(AgoraUIKit.version)\",\"framework\":\"native\"},"
                         + "\"role\":1,\"rtmId\":\"1234-5678\",\"username\":\"username\",\"agora\":{\"rtm\":"
                         + "\"\(AgoraRtmKit.getSDKVersion()!)\",\"rtc\":\"\(AgoraRtcEngineKit.getSdkVersion())\"},"
                         + "\"messageType\":\"UserData\",\"rtcId\":190}"
