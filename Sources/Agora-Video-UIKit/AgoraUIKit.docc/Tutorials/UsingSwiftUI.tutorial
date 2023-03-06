@@ -10,7 +10,7 @@
             Let's make a SwiftUI Video Call App!
             
             After creating a new SwiftUI project with Xcode, you must add the Swift Package of Agora Video UI Kit using this URL:
-            `https://github.com/AgoraIO-Community/VideoUIKit-iOS`
+            `https://github.com/AgoraIO-Community/VideoUIKit-macOS`
             
             And add camera and microphone permissions to your Info.plist:
             
